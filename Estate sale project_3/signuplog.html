@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="form.node.js" method="post" id="registrationForm" onsubmit="return validateForm()">
+        <div class="sign">
+            <h1>sign <span>up</span></h1>
+            <div class="sign-content">
+                <input type="name" required placeholder="user name" min="5" max="25">
+
+                <input type="email" required placeholder=" E-mail">
+                <br>
+                <input type="password" required placeholder=" password" id="password" name="password">
+                <input type="password" required placeholder=" confirm password" id="confirm_password" name="confirm_password">
+                <p class="error-Box" id="errorBox" style="display: none;">Passwords do not match!</p>
+                <br><button id="alertButton">submit</button>
+            </div>
+            <div class="check">
+                <input type="checkbox" required>
+                <p>click to confirm that you have read our <a href="#">Terms and privacy policy.</a></p>
+            </div>
+            <p>Already have an account! <a href="#">login.</a></p>
+        </div>
+    </form>
+     <script src="main.js"></script>
+</body>
+</html>
